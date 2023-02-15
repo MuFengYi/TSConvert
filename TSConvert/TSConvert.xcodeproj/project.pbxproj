@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AC7C4B3299CBAFE005AB40E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7C4B2299CBAFE005AB40E /* AppDelegate.m */; };
+		7AC7C4B6299CBAFE005AB40E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7C4B5299CBAFE005AB40E /* SceneDelegate.m */; };
+		7AC7C4B9299CBAFE005AB40E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7C4B8299CBAFE005AB40E /* ViewController.m */; };
+		7AC7C4BC299CBAFE005AB40E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC7C4BA299CBAFE005AB40E /* Main.storyboard */; };
+		7AC7C4BE299CBB00005AB40E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC7C4BD299CBB00005AB40E /* Assets.xcassets */; };
+		7AC7C4C1299CBB00005AB40E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC7C4BF299CBB00005AB40E /* LaunchScreen.storyboard */; };
+		7AC7C4C4299CBB00005AB40E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7C4C3299CBB00005AB40E /* main.m */; };
+		7AC7C4E2299CD7C8005AB40E /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7C4CD299CD7C8005AB40E /* util.cpp */; };
+		7AC7C4E3299CD7C8005AB40E /* mp4mux.c in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7C4CE299CD7C8005AB40E /* mp4mux.c */; };
+		7AC7C4E4299CD7C8005AB40E /* MxMp4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7C4D1299CD7C8005AB40E /* MxMp4.cpp */; };
+		7AC7C4E5299CD7C8005AB40E /* m2tsextractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7C4D2299CD7C8005AB40E /* m2tsextractor.cpp */; };
+		7AC7C4E6299CD7C8005AB40E /* M2TSProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7C4D7299CD7C8005AB40E /* M2TSProcessor.cpp */; };
+		7AC7C4E7299CD7C8005AB40E /* ElementaryStreamData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7C4D8299CD7C8005AB40E /* ElementaryStreamData.cpp */; };
+		7AC7C4E8299CD7C8005AB40E /* TsDemux.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7C4DC299CD7C8005AB40E /* TsDemux.mm */; };
+		7AC7C4EB299CD949005AB40E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC7C4EA299CD949005AB40E /* libz.tbd */; };
+		7AC7C4ED299CD950005AB40E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC7C4EC299CD950005AB40E /* UIKit.framework */; };
+		DD9AB73007FC2EF155D0D76D /* libPods-TSConvert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6BC3BFDED00BCD89B26B32 /* libPods-TSConvert.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D6BC3BFDED00BCD89B26B32 /* libPods-TSConvert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TSConvert.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46381904BBB10469B523D733 /* Pods-TSConvert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSConvert.debug.xcconfig"; path = "Target Support Files/Pods-TSConvert/Pods-TSConvert.debug.xcconfig"; sourceTree = "<group>"; };
+		7AC7C4AE299CBAFE005AB40E /* TSConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AC7C4B1299CBAFE005AB40E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7AC7C4B2299CBAFE005AB40E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7AC7C4B4299CBAFE005AB40E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		7AC7C4B5299CBAFE005AB40E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		7AC7C4B7299CBAFE005AB40E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7AC7C4B8299CBAFE005AB40E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7AC7C4BB299CBAFE005AB40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AC7C4BD299CBB00005AB40E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AC7C4C0299CBB00005AB40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7AC7C4C2299CBB00005AB40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AC7C4C3299CBB00005AB40E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AC7C4CC299CD7C8005AB40E /* Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
+		7AC7C4CD299CD7C8005AB40E /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		7AC7C4CE299CD7C8005AB40E /* mp4mux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mp4mux.c; sourceTree = "<group>"; };
+		7AC7C4CF299CD7C8005AB40E /* PacketHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketHeader.h; sourceTree = "<group>"; };
+		7AC7C4D0299CD7C8005AB40E /* M2TSProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2TSProcessor.h; sourceTree = "<group>"; };
+		7AC7C4D1299CD7C8005AB40E /* MxMp4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MxMp4.cpp; sourceTree = "<group>"; };
+		7AC7C4D2299CD7C8005AB40E /* m2tsextractor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = m2tsextractor.cpp; sourceTree = "<group>"; };
+		7AC7C4D3299CD7C8005AB40E /* ElementaryStreamData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementaryStreamData.h; sourceTree = "<group>"; };
+		7AC7C4D4299CD7C8005AB40E /* PMT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMT.h; sourceTree = "<group>"; };
+		7AC7C4D5299CD7C8005AB40E /* TableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHeader.h; sourceTree = "<group>"; };
+		7AC7C4D6299CD7C8005AB40E /* m2tsextractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m2tsextractor.h; sourceTree = "<group>"; };
+		7AC7C4D7299CD7C8005AB40E /* M2TSProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = M2TSProcessor.cpp; sourceTree = "<group>"; };
+		7AC7C4D8299CD7C8005AB40E /* ElementaryStreamData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ElementaryStreamData.cpp; sourceTree = "<group>"; };
+		7AC7C4D9299CD7C8005AB40E /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		7AC7C4DA299CD7C8005AB40E /* mp4mux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp4mux.h; sourceTree = "<group>"; };
+		7AC7C4DB299CD7C8005AB40E /* MxMp4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MxMp4.h; sourceTree = "<group>"; };
+		7AC7C4DC299CD7C8005AB40E /* TsDemux.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TsDemux.mm; sourceTree = "<group>"; };
+		7AC7C4DD299CD7C8005AB40E /* PESPacketHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESPacketHeader.h; sourceTree = "<group>"; };
+		7AC7C4DF299CD7C8005AB40E /* AdaptationField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdaptationField.h; sourceTree = "<group>"; };
+		7AC7C4E0299CD7C8005AB40E /* PAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAT.h; sourceTree = "<group>"; };
+		7AC7C4E1299CD7C8005AB40E /* TsDemux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TsDemux.h; sourceTree = "<group>"; };
+		7AC7C4EA299CD949005AB40E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7AC7C4EC299CD950005AB40E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8791DD7049CAA9B00D62515 /* Pods-TSConvert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSConvert.release.xcconfig"; path = "Target Support Files/Pods-TSConvert/Pods-TSConvert.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AC7C4AB299CBAFE005AB40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC7C4ED299CD950005AB40E /* UIKit.framework in Frameworks */,
+				7AC7C4EB299CD949005AB40E /* libz.tbd in Frameworks */,
+				DD9AB73007FC2EF155D0D76D /* libPods-TSConvert.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D268409AC5E63BEA4AE5BDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46381904BBB10469B523D733 /* Pods-TSConvert.debug.xcconfig */,
+				D8791DD7049CAA9B00D62515 /* Pods-TSConvert.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7AC7C4A5299CBAFE005AB40E = {
+			isa = PBXGroup;
+			children = (
+				7AC7C4B0299CBAFE005AB40E /* TSConvert */,
+				7AC7C4AF299CBAFE005AB40E /* Products */,
+				5D268409AC5E63BEA4AE5BDA /* Pods */,
+				A9176F9CB73BADB73E594CD2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7AC7C4AF299CBAFE005AB40E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AC7C4AE299CBAFE005AB40E /* TSConvert.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AC7C4B0299CBAFE005AB40E /* TSConvert */ = {
+			isa = PBXGroup;
+			children = (
+				7AC7C4B1299CBAFE005AB40E /* AppDelegate.h */,
+				7AC7C4B2299CBAFE005AB40E /* AppDelegate.m */,
+				7AC7C4B4299CBAFE005AB40E /* SceneDelegate.h */,
+				7AC7C4B5299CBAFE005AB40E /* SceneDelegate.m */,
+				7AC7C4B7299CBAFE005AB40E /* ViewController.h */,
+				7AC7C4B8299CBAFE005AB40E /* ViewController.m */,
+				7AC7C4CB299CD7C8005AB40E /* TS2MP4 */,
+				7AC7C4BA299CBAFE005AB40E /* Main.storyboard */,
+				7AC7C4BD299CBB00005AB40E /* Assets.xcassets */,
+				7AC7C4BF299CBB00005AB40E /* LaunchScreen.storyboard */,
+				7AC7C4C2299CBB00005AB40E /* Info.plist */,
+				7AC7C4C3299CBB00005AB40E /* main.m */,
+			);
+			path = TSConvert;
+			sourceTree = "<group>";
+		};
+		7AC7C4CB299CD7C8005AB40E /* TS2MP4 */ = {
+			isa = PBXGroup;
+			children = (
+				7AC7C4E1299CD7C8005AB40E /* TsDemux.h */,
+				7AC7C4DC299CD7C8005AB40E /* TsDemux.mm */,
+				7AC7C4CC299CD7C8005AB40E /* Error.h */,
+				7AC7C4CD299CD7C8005AB40E /* util.cpp */,
+				7AC7C4CE299CD7C8005AB40E /* mp4mux.c */,
+				7AC7C4DA299CD7C8005AB40E /* mp4mux.h */,
+				7AC7C4CF299CD7C8005AB40E /* PacketHeader.h */,
+				7AC7C4D7299CD7C8005AB40E /* M2TSProcessor.cpp */,
+				7AC7C4D0299CD7C8005AB40E /* M2TSProcessor.h */,
+				7AC7C4D1299CD7C8005AB40E /* MxMp4.cpp */,
+				7AC7C4D3299CD7C8005AB40E /* ElementaryStreamData.h */,
+				7AC7C4D4299CD7C8005AB40E /* PMT.h */,
+				7AC7C4D5299CD7C8005AB40E /* TableHeader.h */,
+				7AC7C4D2299CD7C8005AB40E /* m2tsextractor.cpp */,
+				7AC7C4D6299CD7C8005AB40E /* m2tsextractor.h */,
+				7AC7C4D8299CD7C8005AB40E /* ElementaryStreamData.cpp */,
+				7AC7C4D9299CD7C8005AB40E /* util.h */,
+				7AC7C4DB299CD7C8005AB40E /* MxMp4.h */,
+				7AC7C4DD299CD7C8005AB40E /* PESPacketHeader.h */,
+				7AC7C4DF299CD7C8005AB40E /* AdaptationField.h */,
+				7AC7C4E0299CD7C8005AB40E /* PAT.h */,
+			);
+			path = TS2MP4;
+			sourceTree = "<group>";
+		};
+		A9176F9CB73BADB73E594CD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AC7C4EC299CD950005AB40E /* UIKit.framework */,
+				7AC7C4EA299CD949005AB40E /* libz.tbd */,
+				1D6BC3BFDED00BCD89B26B32 /* libPods-TSConvert.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AC7C4AD299CBAFE005AB40E /* TSConvert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AC7C4C7299CBB00005AB40E /* Build configuration list for PBXNativeTarget "TSConvert" */;
+			buildPhases = (
+				25F4070B743BA4A79B6097C4 /* [CP] Check Pods Manifest.lock */,
+				7AC7C4AA299CBAFE005AB40E /* Sources */,
+				7AC7C4AB299CBAFE005AB40E /* Frameworks */,
+				7AC7C4AC299CBAFE005AB40E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSConvert;
+			productName = TSConvert;
+			productReference = 7AC7C4AE299CBAFE005AB40E /* TSConvert.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AC7C4A6299CBAFE005AB40E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					7AC7C4AD299CBAFE005AB40E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 7AC7C4A9299CBAFE005AB40E /* Build configuration list for PBXProject "TSConvert" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7AC7C4A5299CBAFE005AB40E;
+			productRefGroup = 7AC7C4AF299CBAFE005AB40E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AC7C4AD299CBAFE005AB40E /* TSConvert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AC7C4AC299CBAFE005AB40E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC7C4C1299CBB00005AB40E /* LaunchScreen.storyboard in Resources */,
+				7AC7C4BE299CBB00005AB40E /* Assets.xcassets in Resources */,
+				7AC7C4BC299CBAFE005AB40E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25F4070B743BA4A79B6097C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSConvert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AC7C4AA299CBAFE005AB40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC7C4E8299CD7C8005AB40E /* TsDemux.mm in Sources */,
+				7AC7C4B9299CBAFE005AB40E /* ViewController.m in Sources */,
+				7AC7C4E6299CD7C8005AB40E /* M2TSProcessor.cpp in Sources */,
+				7AC7C4B3299CBAFE005AB40E /* AppDelegate.m in Sources */,
+				7AC7C4E3299CD7C8005AB40E /* mp4mux.c in Sources */,
+				7AC7C4C4299CBB00005AB40E /* main.m in Sources */,
+				7AC7C4E5299CD7C8005AB40E /* m2tsextractor.cpp in Sources */,
+				7AC7C4E2299CD7C8005AB40E /* util.cpp in Sources */,
+				7AC7C4B6299CBAFE005AB40E /* SceneDelegate.m in Sources */,
+				7AC7C4E4299CD7C8005AB40E /* MxMp4.cpp in Sources */,
+				7AC7C4E7299CD7C8005AB40E /* ElementaryStreamData.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7AC7C4BA299CBAFE005AB40E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AC7C4BB299CBAFE005AB40E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7AC7C4BF299CBB00005AB40E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AC7C4C0299CBB00005AB40E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AC7C4C5299CBB00005AB40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7AC7C4C6299CBB00005AB40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AC7C4C8299CBB00005AB40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46381904BBB10469B523D733 /* Pods-TSConvert.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72R92ZFFLQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TSConvert/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haoke.TSConvert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AC7C4C9299CBB00005AB40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8791DD7049CAA9B00D62515 /* Pods-TSConvert.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72R92ZFFLQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TSConvert/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haoke.TSConvert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AC7C4A9299CBAFE005AB40E /* Build configuration list for PBXProject "TSConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AC7C4C5299CBB00005AB40E /* Debug */,
+				7AC7C4C6299CBB00005AB40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AC7C4C7299CBB00005AB40E /* Build configuration list for PBXNativeTarget "TSConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AC7C4C8299CBB00005AB40E /* Debug */,
+				7AC7C4C9299CBB00005AB40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AC7C4A6299CBAFE005AB40E /* Project object */;
+}
